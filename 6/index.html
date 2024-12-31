@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio, Video, and Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        audio, video, img {
+            margin: 20px 0;
+            border: 2px solid #2E5E9C;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        img {
+            width: 320px;
+            height: 240px;
+        }
+
+        h1 {
+            color: #2E5E9C;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Player</h1>
+    <audio controls>
+        <source src="./assets/sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <video width="320" height="240" controls>
+        <source src="./assets/sample.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    <img src="./assets/sample.jpg" alt="Sample Image">
+</body>
+</html>

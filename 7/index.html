@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>World Map Image Map</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff; 
+        }
+        h1 {
+            background-color: #4682b4; 
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>World Map with Image Map</h1>
+    <img src="./assets/7.png" usemap="#worldmap" alt="World Map">
+
+    <map name="worldmap">
+       
+        <area shape="rect" coords="50,120,300,280" href="https://en.wikipedia.org/wiki/North_America" alt="North America" title="North America">
+        
+        
+        <area shape="rect" coords="350,380,450,700" href="https://en.wikipedia.org/wiki/South_America" alt="South America" title="South America">
+
+      
+        <area shape="rect" coords="800,50,950,200" href="https://en.wikipedia.org/wiki/Europe" alt="Europe" title="Europe">
+
+        
+        <area shape="rect" coords="820,250,1020,550" href="https://en.wikipedia.org/wiki/Africa" alt="Africa" title="Africa">
+
+        
+        <area shape="rect" coords="1000,50,1300,400" href="https://en.wikipedia.org/wiki/Asia" alt="Asia" title="Asia">
+
+        <area shape="rect" coords="1150,500,1300,700" href="https://en.wikipedia.org/wiki/Australia" alt="Australia" title="Australia">
+
+
+        <area shape="rect" coords="400,700,900,768" href="https://en.wikipedia.org/wiki/Antarctica" alt="Antarctica" title="Antarctica">
+    </map>
+</body>
+</html>
