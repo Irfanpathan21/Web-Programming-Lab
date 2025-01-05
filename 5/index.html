@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beginner Layout</title>
+    <title>Webpage Layout</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,58 +11,59 @@
             padding: 0;
             background-color: black;
         }
-
-        .container {
-            display: grid;
-            gap: 15px;
-            padding: 100px;
+        header {
+            background-color: #b3d9ff;
+            text-align: center;
+            padding: 20px;
         }
-
-        .header {
-            grid-column: span 2;
-            background-color: lightblue;
+        nav {
+            background-color: #99ff99;
             text-align: center;
             padding: 10px;
         }
-
-        .nav {
-            grid-column: span 2;
-            background-color: lightgreen;
+        section {
+            background-color: #ffffcc;
+            padding: 20px;
+            width: 70%;
+            float: left;
+        }
+        aside {
+            background-color: #d9d9d9;
+            padding: 20px;
+            width: 30%;
+            float: left;
+        }
+        footer {
+            background-color: #ffcccc;
             text-align: center;
             padding: 10px;
+            clear: both;
         }
-
-        .section {
-            background-color: lightgoldenrodyellow;
+        article {
+            background-color: #ff9999;
             padding: 10px;
-        }
-
-        .article {
-            background-color: lightcoral;
-            padding: 10px;
-        }
-
-        .aside {
-            background-color: lightgray;
-            padding: 10px;
-        }
-
-        .footer {
-            grid-column: span 2;
-            background-color: lightpink;
-            text-align: center;
-            padding: 10px;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">Header</div>
-        <div class="nav">Navigation</div>
-        <div class="section">Section</div>
-        <div class="article">Article</div>
-        <div class="aside">Aside</div>
-        <div class="footer">Footer</div>
-    </div>
+    <header>
+        Header
+    </header>
+    <nav>
+        Navigation
+    </nav>
+    <section>
+        Section
+        <article>
+            Article
+        </article>
+    </section>
+    <aside>
+        Aside
+    </aside>
+    <footer>
+        Footer
+    </footer>
 </body>
 </html>
